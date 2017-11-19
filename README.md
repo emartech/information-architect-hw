@@ -7,17 +7,17 @@ A feladat teljesítéséhez illetve a megoldás prezentálásához bármilyen ar
 
 Megoldásként magát a dokumentációt illetve hosztolt szolgáltatás igénybevétele esetén annak elérhetőségét, az arra mutató linket küldje el.
 
-## Végpont vázlat
+## A dokumentálandó végpont vázlata
 
 ### Feliratkozók tömeges módosítása
 
 Egy hívással tudja módosítani tetszőleges feliratkozók bármely adatát. Feliratkozónként egy-egy objektumban kell átadni a módosítandó adatokat. Feliratkozónként akár más-más adatokat is lehet módosítani. Ha a módosítandó adatok között szerepel az `id` kulcs, akkor az adott azonosítójú feliratkozó kerül módosításra, de lehetőség van bármely mező értéke alapján is módosítani. Ez utóbbi esetben az `external_key_field` mezőben kell megadni, hogy mely kulcs alapján történjen az azonosítás.
 
-FONTOS: `external_key_field` alapján történő azonosítás esetén minden objektumnak tartalmaznia kell az `external_key_field` által hivatkozott mezőt.
+**FONTOS**: `external_key_field` alapján történő azonosítás esetén minden objektumnak tartalmaznia kell az `external_key_field` által hivatkozott mezőt.
 
-FONTOS: ha nem `id` alapján történik a frissítés, akkor előfordulhat, hogy egynél több rekord is módosításra kerül.
+**FONTOS**: ha nem `id` alapján történik a frissítés, akkor előfordulhat, hogy egynél több rekord is módosításra kerül.
 
-FIGYELEM: a kötegelt módosítás nagy mennyiségű feliratkozó gyors módosítására szolgál, az adatmódosítás során nem történik mezőszinkron, nem hajtódnak végre műveletek, sem időzítések. Tehát csak abban az esetben használja a tömeges módosítást, ha az előbbiekre nincs szüksége.
+**FIGYELEM**: a kötegelt módosítás nagy mennyiségű feliratkozó gyors módosítására szolgál, az adatmódosítás során nem történik mezőszinkron, nem hajtódnak végre műveletek, sem időzítések. Tehát csak abban az esetben használja a tömeges módosítást, ha az előbbiekre nincs szüksége.
 
 ### kérés:
 
