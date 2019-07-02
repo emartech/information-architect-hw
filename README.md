@@ -3,9 +3,9 @@
 ## Feladat
 
 Készítse el az alább található végpont angol nyelvű dokumentációját a rendelkezésre álló vázlat alapján.
-A feladat teljesítéséhez illetve a megoldás prezentálásához bármilyen arra alkalmas eszközt illetve szolgáltatást használhat.
+A feladat teljesítéséhez használja a StopLight rendszerét (https://app.stoplight.io).
 
-Megoldásként magát a dokumentációt illetve hosztolt szolgáltatás igénybevétele esetén annak elérhetőségét, az arra mutató linket küldje el.
+Megoldását `OAS (Swagger 2) w/ Stoplight Extensions .json` formátumban exportálva juttassa vissza hozzánk.
 
 ## A dokumentálandó végpont vázlata
 
